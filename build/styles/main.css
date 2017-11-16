@@ -1,0 +1,231 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html, body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	letter-spacing: 0.075em;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1170px;
+	padding-left:15px;
+	padding-right:15px;
+}
+body {
+	background:#fff;
+	color: #181818;
+}
+/* ==========================================================================
+Typography
+========================================================================== */
+h1, h2, h3, h4, h5, h6, p {
+	color: #ffffff;
+	text-transform:none;
+}
+h1{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+h2, h3, h4, h5{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+h6{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+p{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+h1{
+	font-size: 30px;
+}
+h2{
+	font-size: 25px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 16px;
+}
+h6{
+	font-size: 14px;
+}
+p{
+	font-size: 1rem;
+	line-height: 2em;
+	text-align:justify;  
+}
+/* ==========================================================================*/
+.visual {
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-sizing:border-box;
+	height:100%;
+	width: 100%;
+}
+.visual:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.visual__intro {
+	display:table;
+	font-size:2em;
+	font-weight:300;
+	height:100%;
+	left:0;
+	text-align:left;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+.visual__intro__black {
+	color:#000;
+}
+.visual__intro__white {
+	color:#fff;
+}
+.visual__intro h1, h2, h3, h4, h5, h6, p{
+	margin:0;
+}
+.visual__intro, .visual__scroll {
+	position:absolute;
+}
+.visual__inner {
+	padding:50px 60px 50px 60px;
+}
+.visual__intro-inner {
+	padding:60px 100px 100px 100px;
+}
+.visual, .visual__nav {
+	position:relative;
+}
+.section {
+	padding:108px 0 115px;
+}
+.section__title {
+	font-size:30px;
+	margin:0 0 100px;
+	text-align:center;
+}
+.section--about {
+	padding:100px 0 175px;
+	background: #181818;
+	color: #ffffff;
+}
+.about {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:730px;
+	text-align:center;
+}
+.about .about__text {
+	margin:0;
+}
+/* ==========================================================================
+Navigation
+========================================================================== */
+.navigation{
+	background:rgba(24,24,24,0.8);
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index: 1;
+}
+.navbar {
+	overflow: hidden;
+	box-sizing: border-box;
+	font-size: 14px;
+	margin:25px 25px;
+}
+.navbar li {
+	cursor: pointer;
+	color: #ffffff;
+}
+.navbar-right{
+	z-index: 100;
+	opacity: 1.0;
+}
+/* ==========================================================================
+   Logo Container
+   ========================================================================== */
+ .logo-container {
+ 	position: absolute;
+ 	top: 25px;
+ 	width: 100%;
+ 	display: block;
+ }
+ .logo-container h1{
+ 	font-size: 20px;
+ 	line-height: 1.6;
+ }
+ .logo-wrap {
+	width: 75px;
+	margin-left: 25px;
+}
+/* ==========================================================================
+Footer
+========================================================================== */
+.footer {
+	padding-bottom: 20px;
+}
+.footer p {
+	font-size:.75em;
+	letter-spacing: .05em;
+	color:#181818;
+}
+.footer .container {
+	padding:27px 0;
+}
+.footer__note {
+	margin:0;
+}
+.footer__note--primary {
+	float:left;
+}
+.footer__note--secondary {
+	float:right;
+}
+/* ==========================================================================
+Section Backgrounds. Will get replaced by jimmi's live visuals
+========================================================================== */
+.visual_1{
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/2J2h0D2M2L2i3L3L2S3C/liquor_ny.jpg)no-repeat center center;
+}
+.visual_2{
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/072e3Z3G2X1E3o082U1l/uber_NY.jpg)no-repeat center center;
+}
+.visual_3{
+	background: url(https://s3.amazonaws.com/f.cl.ly/items/473b2w0L0Q163P192U2P/UB_move_concentrations.jpg)no-repeat center center;
+}
+
