@@ -88,7 +88,7 @@ Header
     display: table-cell;
     vertical-align: middle;
 }
-.header_intro-inner .header_name h1 {
+.header_intro-inner.header_name h1 {
     font-family: 'Abril Fatface', cursive;
 }
 
