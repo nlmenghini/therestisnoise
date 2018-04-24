@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
 	text-transform:none;
 }
 h1{
-	font-family: "futura-pt",sans-serif;
+	font-family: 'Abril Fatface', cursive;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -88,9 +88,6 @@ Header
     padding: 60px 180px 50px;
     display: table-cell;
     vertical-align: middle;
-}
-.header_intro-inner.header_name h1 {
-    font-family: 'Abril Fatface', cursive;
 }
 
 /* ==========================================================================
