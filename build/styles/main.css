@@ -23,7 +23,6 @@ html, body {
 }
 body {
 	background:#000;
-	color: #fff;
 	padding: 20px;
 }
 /* ==========================================================================
@@ -63,31 +62,30 @@ Header
 ========================================================================== */
 .header{
 	background: no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 .header_intro {
 	position: absolute;
-    color: #fff;
-    display: table;
-    font-size: 2em;
-    font-weight: 300;
-    height: 100%;
-    left: 0;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  display: table;
+  font-size: 2em;
+  font-weight: 300;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .header_intro-inner {
-    padding: 60px 180px 50px;
-    display: table-cell;
-    vertical-align: middle;
+  padding: 60px 180px 50px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* ==========================================================================
@@ -101,7 +99,6 @@ Footer
 .footer p {
 	font-size:.75em;
 	letter-spacing: .05em;
-	color:#181818;
 }
 .footer .container {
 	padding:27px 0;
