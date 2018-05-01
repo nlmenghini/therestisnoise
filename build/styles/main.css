@@ -31,9 +31,9 @@ h1, h2, h3, h4, h5, h6, p {
 	text-transform:none;
 }
 h1{
-	font-family: 'Abril Fatface', cursive;
+	font-family: "futura-pt",sans-serif;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 900;
 }
 
 h2, h3, h4, h5{
@@ -59,7 +59,7 @@ p{
 /* ==========================================================================
 Header
 ========================================================================== */
-.header{
+.header {
 	background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -85,6 +85,24 @@ Header
   padding: 60px 180px 50px;
   display: table-cell;
   vertical-align: middle;
+}
+.green {
+    background: linear-gradient(to right, #25e7d8 20%, #82f07d 40%, #82f07d 60%, #25e7d8 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 12s linear infinite;
+}
+.purple {
+    background: linear-gradient(to right, #E92BFF 20%, #4646FF 40%, #4646FF 60%, #E92BFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 12s linear infinite;
 }
 
 /* ==========================================================================
