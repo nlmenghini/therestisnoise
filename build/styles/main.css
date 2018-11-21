@@ -22,40 +22,48 @@ html, body {
 	padding-right:15px;
 }
 body {
-	background:#000;
+	background: linear-gradient(323deg, #eb008b, #f1f259);
+	background-size: 400% 400%;
+
+	-webkit-animation: backgroundgradient .15s ease infinite;
+	-moz-animation: backgroundgradient .15s ease infinite;
+	-o-animation: backgroundgradient .15s ease infinite;
+	animation: backgroundgradient .15s ease infinite;
 }
+
 /* ==========================================================================
 Typography
 ========================================================================== */
 h1, h2, h3, h4, h5, h6, p {
 	text-transform:none;
 }
-h1{
+h1 {
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 900;
 }
 
-h2, h3, h4, h5{
+h2, h3, h4, h5 {
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 500;
 }
-h6{
+h6 {
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
-p{
+p {
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
-p{
+p {
 	font-size: 1rem;
 	line-height: 2em;
 	text-align:justify;
 }
+
 /* ==========================================================================
 Header
 ========================================================================== */
@@ -81,28 +89,35 @@ Header
   width: 100%;
   z-index: 1;
 }
+.header_name {
+	display: inline-block;
+	height: 0px;
+	margin-top: 10%;
+}
 .header_intro-inner {
-  padding: 60px 180px 50px;
   display: table-cell;
   vertical-align: middle;
 }
-.green {
-    background: linear-gradient(to right, #25e7d8 20%, #82f07d 40%, #82f07d 60%, #25e7d8 80%);
-    background-size: 200% auto;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 12s linear infinite;
+.top-image {
+	background: linear-gradient(323deg, #f1f259, #eb008b);
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	z-index: 1;
+	font-size: 60vw;
+	position: absolute;
+
+	-webkit-animation: backgroundgradient .15s ease infinite;
+	-moz-animation: backgroundgradient .15s ease infinite;
+	-o-animation: backgroundgradient .15s ease infinite;
+	animation: backgroundgradient .15s ease infinite;
 }
-.purple {
-    background: linear-gradient(to right, #E92BFF 20%, #4646FF 40%, #4646FF 60%, #E92BFF 80%);
-    background-size: 200% auto;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 12s linear infinite;
+
+.bottom-image {
+	color: white;
+	font-size: 60vw;
+	position: relative;
+	top: 3px;
 }
 
 /* ==========================================================================
@@ -114,6 +129,7 @@ Footer
 	width: 100%;
 }
 .footer p {
+	opacity: .25;
 	font-size:.75em;
 	letter-spacing: .05em;
 }
@@ -123,4 +139,28 @@ Footer
 .footer__note {
 	margin:0;
 	text-align: center;
+}
+
+/* ==========================================================================
+Gradient keyframes
+========================================================================== */
+@-webkit-keyframes backgroundgradient {
+    0%{background-position:15% 0%}
+    50%{background-position:85% 100%}
+    100%{background-position:15% 0%}
+}
+@-moz-keyframes backgroundgradient {
+    0%{background-position:15% 0%}
+    50%{background-position:85% 100%}
+    100%{background-position:15% 0%}
+}
+@-o-keyframes backgroundgradient {
+    0%{background-position:15% 0%}
+    50%{background-position:85% 100%}
+    100%{background-position:15% 0%}
+}
+@keyframes backgroundgradient {
+    0%{background-position:15% 0%}
+    50%{background-position:85% 100%}
+    100%{background-position:15% 0%}
 }
