@@ -1,74 +1,58 @@
 html {
-	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%;
-	box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-html, body {
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	letter-spacing: 0.075em;
-	width: 100%;
-	height: 100%;
-}
-.container {
-	margin-left:auto;
-	margin-right:auto;
-	max-width:1170px;
-	padding-left:15px;
-	padding-right:15px;
-}
-body {
-	background: linear-gradient(323deg, #eb008b, #f1f259);
-	background-size: 400% 400%;
 
-	-webkit-animation: backgroundgradient .15s ease infinite;
-	-moz-animation: backgroundgradient .15s ease infinite;
-	-o-animation: backgroundgradient .15s ease infinite;
-	animation: backgroundgradient .15s ease infinite;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.075em;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  background: linear-gradient(323deg, #000000, #1a1a1a);
+  background-size: 400% 400%;
+  animation: animateBackground 17s ease infinite;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 2% 0%
+  }
+
+  50% {
+    background-position: 99% 100%
+  }
+
+  100% {
+    background-position: 2% 0%
+  }
 }
 
 /* ==========================================================================
 Typography
 ========================================================================== */
-h1, h2, h3, h4, h5, h6, p {
-	text-transform:none;
-}
-h1 {
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 900;
-}
-
-h2, h3, h4, h5 {
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 500;
-}
-h6 {
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 700;
-}
-p {
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-}
-p {
-	font-size: 1rem;
-	line-height: 2em;
-	text-align:justify;
-}
-
 /* ==========================================================================
 Header
 ========================================================================== */
 .header {
-	background: no-repeat center center;
+  background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -77,8 +61,9 @@ Header
   height: 100%;
   width: 100%;
 }
+
 .header_intro {
-	position: absolute;
+  position: absolute;
   display: table;
   font-size: 2em;
   font-weight: 300;
@@ -89,78 +74,40 @@ Header
   width: 100%;
   z-index: 1;
 }
+
 .header_name {
-	display: inline-block;
-	height: 0px;
-	margin-top: 10%;
+  display: inline-block;
+  height: 0px;
 }
+
 .header_intro-inner {
   display: table-cell;
   vertical-align: middle;
 }
-.top-image {
-	background: linear-gradient(323deg, #f1f259, #eb008b);
-	background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	z-index: 1;
-	font-size: 60vw;
-	position: absolute;
 
-	-webkit-animation: backgroundgradient .15s ease infinite;
-	-moz-animation: backgroundgradient .15s ease infinite;
-	-o-animation: backgroundgradient .15s ease infinite;
-	animation: backgroundgradient .15s ease infinite;
-}
-
-.bottom-image {
-	color: white;
-	font-size: 60vw;
-	position: relative;
-	top: 3px;
+.black_lives_matter {
+  color: #F4F4F9;
+  font-family: ministry, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* ==========================================================================
 Footer
 ========================================================================== */
 .footer {
-	position: fixed;
-  bottom: 20px;
-	width: 100%;
-}
-.footer p {
-	opacity: .25;
-	font-size:.75em;
-	letter-spacing: .05em;
-}
-.footer .container {
-	padding:27px 0;
-}
-.footer__note {
-	margin:0;
-	text-align: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-family: ministry, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* ==========================================================================
-Gradient keyframes
-========================================================================== */
-@-webkit-keyframes backgroundgradient {
-    0%{background-position:15% 0%}
-    50%{background-position:85% 100%}
-    100%{background-position:15% 0%}
-}
-@-moz-keyframes backgroundgradient {
-    0%{background-position:15% 0%}
-    50%{background-position:85% 100%}
-    100%{background-position:15% 0%}
-}
-@-o-keyframes backgroundgradient {
-    0%{background-position:15% 0%}
-    50%{background-position:85% 100%}
-    100%{background-position:15% 0%}
-}
-@keyframes backgroundgradient {
-    0%{background-position:15% 0%}
-    50%{background-position:85% 100%}
-    100%{background-position:15% 0%}
+.footer p {
+	color: #F4F4F9;
+  opacity: .20;
+  font-size: .50em;
+  letter-spacing: .05em;
+	text-align: center;
 }
